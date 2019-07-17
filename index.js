@@ -1,4 +1,9 @@
-const fs = require("fs"), path = require("path"), urlJoin = require("url-join")
+const fs = require("fs"), path = require("path"), url = require("url")
+
+const urlJoin = (first, second) => {
+  let firstWithSlash = first.endsWith("/") ? first : `${first}/`
+  return url.resolve(firstWithSlash, second)
+}
 
 module.exports = bundler => {
   const fileMap = {},

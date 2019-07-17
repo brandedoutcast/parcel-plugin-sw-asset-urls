@@ -24,8 +24,5 @@
   "bugs": {
     "url": "https://github.com/rohith/parcel-plugin-sw-asset-urls/issues"
   },
-  "homepage": "https://github.com/rohith/parcel-plugin-sw-asset-urls#readme",
-  "dependencies": {
-    "url-join": "^4.0.1"
-  }
+  "homepage": "https://github.com/rohith/parcel-plugin-sw-asset-urls#readme"
 }
