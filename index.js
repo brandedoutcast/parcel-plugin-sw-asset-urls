@@ -1,4 +1,4 @@
-const fs = require("fs"), path = require("path")
+const fs = require("fs"), path = require("path"), urlJoin = require("url-join")
 
 module.exports = bundler => {
   const fileMap = {},
@@ -7,7 +7,7 @@ module.exports = bundler => {
   let publicURL = "./"
 
   const processBundle = (bundle) => {
-    let bundledFilename = path.join(publicURL, path.basename(bundle.name))
+    let bundledFilename = urlJoin(publicURL, path.basename(bundle.name))
 
     if (serviceWorkerNames.some(name => bundledFilename.endsWith(name))) {
       return
