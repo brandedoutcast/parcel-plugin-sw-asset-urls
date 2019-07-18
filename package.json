@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-sw-asset-urls",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A parce-bundler plugin to replace the filename URLs in Service Worker with their hashed counterparts",
   "main": "index.js",
   "keywords": [
